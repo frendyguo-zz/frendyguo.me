@@ -1,0 +1,49 @@
+.m404Page {}
+
+.m404Page-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+  text-align: center;
+}
+
+.m404Page-heading {
+  font-size: 48px;
+  color: var(--coral);
+  margin: 0;
+}
+
+.m404Page-description {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .m404Page-wrapper {
+    text-align: left;
+    padding-top: 140px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .m404Page-heading {
+    font-size: 64px;
+  }
+
+  .m404Page-description {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .m404Page-wrapper {
+    margin-left: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .m404Page-wrapper {
+    margin-left: 248px;
+  }
+}

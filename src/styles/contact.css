@@ -1,0 +1,68 @@
+.mContactPage {}
+
+.mContactPage-wrapper {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+  text-align: left;
+}
+
+.mContactPage-heading {
+  font-size: 40px;
+  color: var(--coral);
+  margin: 0;
+  font-weight: 600;
+}
+
+.mContactPage-guide {
+  font-size: 15px;
+  line-height: 1.556;
+  font-weight: 400;
+  margin: 8px 0 0;
+}
+
+.mContactPage-mailer {
+  /* display: inline-block;
+  background-color: var(--coral); */
+  /* padding: 4px 8px 8px;
+  line-height: 16px;
+  height: 28px; */
+  margin-top: 10px;
+}
+
+.mContactPage-mailerLink {
+  color: #ffffff;
+  display: inline-block;
+  padding: 6px 8px 8px;
+  font-size: 14px;
+  line-height: 16px;
+  height: 28px;
+  font-weight: 600;
+  background-color: var(--coral);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.mContactPage-mailerLink:hover {
+  color: #ffffff;
+  background-color: var(--deepScarlet);
+}
+
+@media screen and (min-width: 768px) {
+  .mContactPage-wrapper {
+    padding-top: 140px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mContactPage-wrapper {
+    margin-left: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mContactPage-wrapper {
+    margin-left: 248px;
+  }
+}

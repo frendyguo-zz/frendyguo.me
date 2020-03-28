@@ -1,0 +1,28 @@
+.mBrand {
+  display: inline-block;
+  padding: 8px 0;
+  height: 48px;
+  line-height: 32px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.mBrand-link {
+  margin-top: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mBrand-link:hover {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+
+}

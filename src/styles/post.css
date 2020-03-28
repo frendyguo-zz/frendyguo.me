@@ -1,0 +1,135 @@
+.mPostPage {
+  padding: 0 0 48px;
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.mPostPage-fm {
+  padding: 20px 0 0;
+}
+
+.mPostPage-fmCover {
+  margin: 16px 0 0;
+}
+
+.mPostPage-fmCoverSrc {
+  margin: 0;
+  display: block;
+}
+
+.mPostPage-fmInfo {
+  padding: 0 20px;
+}
+
+.mPostPage-fmInfoTitle {
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.mPostPage-fmInfoByline {
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 6px;
+  color: #777777;
+  font-weight: 500;
+}
+
+.mPostPage-fmInfoBylineDivider {
+  padding: 0 6px;
+  display: inline;
+  font-weight: 700;
+}
+
+.mPostPage-fmInfoBylineDivider::after {
+  content: '\00B7';
+}
+
+.mPostPage-content {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .mPostPage {
+    /* padding-top: 64px; */
+  }
+
+  .mPostPage-fm {
+    padding-top: 64px;
+  }
+
+  .mPostPage-fmInfo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mPostPage-fmInfoTitle {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .mPostPage-fmCover {
+    padding: 0;
+    margin-top: 20px;
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+  .mPostPage-content {
+    padding: 0;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mPostPage {
+    margin-left: 180px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 120px;
+    
+  }
+/* 
+  .mPostPage-fm {
+    background-color: #FA7268;
+    padding: 48px;
+  }
+
+  .mPostPage-fmWrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .mPostPage-fmCover,
+  .mPostPage-fmInfo {
+    width: 50%;
+  }
+
+  .mPostPage-fmInfo {
+    padding-left: 48px;
+  }
+
+  .mPostPage-fmTitle {
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+  .mPostPage-fmByline {
+    color: #ffffff;
+    padding: 0;
+  }
+
+  .mPostPage-fmCover {
+    padding: 0;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+  .mPostPage {
+    margin-left: 248px;
+  }
+}
