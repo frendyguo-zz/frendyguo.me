@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: 'https://frendyguo.me',
     defaultImage: '/images/og-image.png',
   },
+  pathPrefix: "/",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
