@@ -10,6 +10,11 @@ const Header = ({ siteTitle }) => (
       <Brand />
       <div className="mHeader-menu">
         <Link
+          to="/about"
+          className="mHeader-menuLink">
+            → About
+        </Link>
+        <Link
           to="/contact"
           className="mHeader-menuLink">
             → Contact

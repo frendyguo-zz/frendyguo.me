@@ -15,6 +15,7 @@ const Profile = () => {
                 className="mProfile-infoRoleCompany"
                 target="_blank"
                 href="https://kurio.id"
+                rel="noopener noreferrer"
               >
                 @Kurio.id
               </a>

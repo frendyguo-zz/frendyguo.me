@@ -4,7 +4,7 @@ module.exports = {
     description: `Personal Blog of Frendy Guo. I am passionate about building website`,
     author: `@frendyguo`,
     siteUrl: 'https://frendyguo.me',
-    defaultImage: '/images/og-image.png',
+    defaultImage: '/og-image.png',
   },
   pathPrefix: "/",
   plugins: [
@@ -56,7 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Frendy Guo`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -87,6 +87,12 @@ module.exports = {
             variants: [`400`, `500`, `600`, `700`],
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-162139722-1',
       },
     },
   ],

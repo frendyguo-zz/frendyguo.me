@@ -5,7 +5,9 @@
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	
+	--darkBg: #2C2C35;
 
   --coral: #FA7268;
   --deepScarlet: #7F0800;

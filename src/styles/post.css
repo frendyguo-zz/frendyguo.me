@@ -52,10 +52,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .mPostPage {
-    /* padding-top: 64px; */
-  }
-
   .mPostPage-fm {
     padding-top: 64px;
   }
@@ -88,44 +84,8 @@
     margin-left: 180px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 120px;
-    
+    padding-bottom: 120px; 
   }
-/* 
-  .mPostPage-fm {
-    background-color: #FA7268;
-    padding: 48px;
-  }
-
-  .mPostPage-fmWrapper {
-    display: flex;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .mPostPage-fmCover,
-  .mPostPage-fmInfo {
-    width: 50%;
-  }
-
-  .mPostPage-fmInfo {
-    padding-left: 48px;
-  }
-
-  .mPostPage-fmTitle {
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
-  }
-  .mPostPage-fmByline {
-    color: #ffffff;
-    padding: 0;
-  }
-
-  .mPostPage-fmCover {
-    padding: 0;
-  } */
 }
 
 @media screen and (min-width: 1200px) {

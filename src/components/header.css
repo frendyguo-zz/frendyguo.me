@@ -21,13 +21,19 @@
 }
 
 .mHeader-menu {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .mHeader-menuLink {
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
+  margin-left: 10px;
+}
+
+.mHeader-menuLink:first-child {
+  margin-left: 0;
 }
 
 .mHeader-menuLink:hover {

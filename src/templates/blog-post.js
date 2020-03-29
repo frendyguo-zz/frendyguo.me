@@ -8,7 +8,6 @@ import { formatPostDate } from '../utils/helper';
 import '../styles/post.css';
 
 const BlogPostTemplate = ({ data }) => {
-  console.log(data);
   const post = data.markdownRemark;
   const featuredImgFluid = post.frontmatter.featuredImage ? post.frontmatter.featuredImage.childImageSharp.fluid : null;
 
@@ -18,6 +17,7 @@ const BlogPostTemplate = ({ data }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.shortDesc ? post.frontmatter.shortDesc : post.excerpt}
         image={featuredImgFluid ? featuredImgFluid.src : null}
+        slug={post.fields.slug}
       />
       <div className="mPostPage">
         <div className="mPostPage-fm">
@@ -70,6 +70,9 @@ export const query = graphql`
       }
       timeToRead
       excerpt
+      fields {
+        slug
+      }
     }
   }
 `

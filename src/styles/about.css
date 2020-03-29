@@ -1,0 +1,186 @@
+.mAboutPage-wrapper {
+  padding: 64px 20px 80px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.mAboutPage-description {
+  margin-top: 40px;
+}
+
+.mAboutPage-descriptionSection {
+  margin-top: 48px;
+}
+
+.mAboutPage-descriptionSection:first-child {
+  margin-top: 0;
+}
+
+.mAboutPage-descriptionSectionHeading,
+.mAboutPage-descriptionSectionSubheading {
+  position: relative;
+  display: block;
+  display: inline-block;
+  font-size: 36px;
+  margin: 0;
+}
+
+.mAboutPage-descriptionSectionSubheading {
+  font-size: 28px;
+}
+
+.mAboutPage-descriptionSectionHeading::before,
+.mAboutPage-descriptionSectionSubheading::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+  background-color: var(--coral);
+  display: inline-block;
+  opacity: 0.55;
+  padding-right: 12px;
+  box-sizing: initial;
+}
+
+.mAboutPage-descriptionSectionSubheading::before {
+  height: 10px;
+  bottom: -1px;
+}
+
+.mAboutPage-descriptionSectionHeading > span,
+.mAboutPage-descriptionSectionSubheading > span {
+  position: relative;
+}
+
+.mAboutPage-descriptionSectionParagraph {
+  font-size: 16px;
+  margin: 20px 0 0;
+}
+
+.mAboutPage-descriptionSectionParagraph:first-child {
+  margin-top: 0;
+}
+
+.mAboutPage-descriptionSectionSkill {
+  margin-top: 8px;
+}
+
+.mAboutPage-descriptionSectionSkillList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+}
+
+.mAboutPage-descriptionSectionSkillListItem {
+  padding-left: 16px;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+  position: relative;
+}
+
+.mAboutPage-descriptionSectionSkillListItem::before {
+  content: '»';
+  line-height: 24px;
+  font-size: 14px;
+  position: absolute;
+  left: 4px;
+  top: 0;
+}
+
+.mAboutPage-profilePic {
+  max-width: 280px;
+  width: 100%;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+}
+
+.mAboutPage-profilePicSrc {
+  padding-bottom: 100%;
+  background-color: #DFDFDF;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+
+.mAboutPage-descriptionSectionExperience {
+  margin-top: 24px;
+}
+
+.mAboutPage-descriptionSectionExperienceItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.mAboutPage-descriptionSectionExperienceItem:first-child {
+  margin-top: 0;
+}
+
+.mAboutPage-descriptionSectionExperienceItemOrg {
+  font-size: 13px;
+  font-weight: 600;
+  width: 80px;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  margin-right: 32px;
+}
+
+.mAboutPage-descriptionSectionExperienceItemInfo {
+  width: 100%;
+}
+
+.mAboutPage-descriptionSectionExperienceItemInfoRole {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.mAboutPage-descriptionSectionExperienceItemInfoRole > span {
+  color: var(--coral);
+}
+
+.mAboutPage-descriptionSectionExperienceItemInfoTime {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .mAboutPage-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 640px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mAboutPage-wrapper {
+    max-width: 800px;
+    margin-left: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .mAboutPage-description {
+    margin-right: 40px;
+    margin-top: 0;
+  }
+
+  .mAboutPage-profilePic {
+    margin: 66px auto 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mAboutPage-wrapper {
+    margin-left: 248px;
+  }
+}

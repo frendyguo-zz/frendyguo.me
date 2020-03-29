@@ -9,9 +9,9 @@
 
 .mContactPage-heading {
   font-size: 40px;
-  color: var(--coral);
+  /* color: var(--coral); */
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .mContactPage-guide {
@@ -22,11 +22,6 @@
 }
 
 .mContactPage-mailer {
-  /* display: inline-block;
-  background-color: var(--coral); */
-  /* padding: 4px 8px 8px;
-  line-height: 16px;
-  height: 28px; */
   margin-top: 10px;
 }
 
