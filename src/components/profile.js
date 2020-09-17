@@ -1,5 +1,4 @@
 import React from 'react';
-import ProfPic from '../images/profile.jpg';
 import './profile.css';
 
 const Profile = () => {
@@ -26,14 +25,6 @@ const Profile = () => {
               </em>
             </p>
           </div>
-        </div>
-        <div className="mProfile-avatar">
-          <div
-            className="mProfile-avatarSrc"
-            style={{
-              backgroundImage: `url(${ProfPic})`,
-            }}
-          />
         </div>
       </div>
     </div>

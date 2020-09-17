@@ -172,7 +172,7 @@ You can learn more about CSS Modules [here](https://github.com/css-modules/css-m
 
   .btn--active,
   .btn--active:active {
-    outline: '#222222';
+    outline: #222222;
   }
 ```
 
