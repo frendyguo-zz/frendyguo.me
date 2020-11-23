@@ -60,4 +60,4 @@ Scrum Master holds no authority over the team, only the process. With that, he/s
 
 I believe the Scrum Master role in a Scrum Team should never go away. Even the best Scrum Team continues to benefit from proper guiding by Scrum Master.
 
-This article intends to share what I think about the significance of the Scrum Master role in a Scrum Team. Is your organization implements a similar framework? I'd love to hear what you think of it. 😉
+This article intends to share what I think about the significance of the Scrum Master role in a Scrum Team. Does your organization implement a similar framework? I'd love to hear what you think of it. 😉

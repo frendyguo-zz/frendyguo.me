@@ -45,7 +45,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 590,
+              maxWidth: 640,
             },
           },
         ],
@@ -75,18 +75,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Alegreya Sans SC`,
-            variants: [`900`],
-          },
-          {
-            family: `Source Sans Pro`,
-            variants: [`400`, `500`, `600`, `700`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Alegreya Sans SC`,
+              variants: [`900`],
+            },
+            {
+              family: `Source Sans Pro`,
+              variants: [`400`, `500`, `600`, `700`],
+            },
+          ],
+        },
       },
     },
     {
