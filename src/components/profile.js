@@ -7,23 +7,13 @@ const Profile = () => {
       <div className="mProfile-wrapper">
         <div className="mProfile-info">
           <div className="mProfile-infoWrapper">
-            <h3 className="mProfile-infoName">Frendy Guo</h3>
-            <p className="mProfile-infoRole">
-              <span>Frontend Engineer </span>
-              <a
-                className="mProfile-infoRoleCompany"
-                target="_blank"
-                href="https://kurio.id"
-                rel="noopener noreferrer"
-              >
-                @Kurio.id
-              </a>
-            </p>
-            <p className="mProfile-infoDesc">
-              <em>
-                Passionate about building website
-              </em>
-            </p>
+            <div className="mProfile-infoGreet">
+              <p>
+                Hi 👋, I'm <strong>Frendy Guo</strong> a <strong>Frontend Engineer</strong> from <strong>Indonesia</strong>.
+                <br />
+                Welcome to my <strong>personal blog</strong>. This is where I share my <strong>thoughts</strong> about the latest <strong>web technologies</strong>.
+              </p>
+            </div>
           </div>
         </div>
       </div>

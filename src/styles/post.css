@@ -23,16 +23,17 @@
 
 .mPostPage-fmInfoTitle {
   color: rgba(0, 0, 0, 0.84);
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 27px;
+  line-height: 36px;
   margin: 0;
+  font-weight: 700;
 }
 
 .mPostPage-fmInfoByline {
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 16px;
   margin-top: 6px;
-  color: #777777;
+  color: #646464;
   font-weight: 500;
 }
 
@@ -62,8 +63,8 @@
   }
 
   .mPostPage-fmInfoTitle {
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .mPostPage-fmCover {

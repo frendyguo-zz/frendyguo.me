@@ -43,17 +43,21 @@
 }
 
 .mHomePage-blogPostTitle {
-  font-size: 32px;
-  line-height: 38px;
-  color: #FA7268;
+  font-size: 24px;
+  line-height: 31px;
+  color: #222222;
   font-weight: 700;
   margin: 0;
 }
 
+.mHomePage-blogPostTitle > a {
+  color: #222222;
+}
+
 .mHomePage-blogPostExcerpt {
-  color: rgba(0, 0, 0, .84);
+  color: rgba(0, 0, 0, .75);
   margin: 4px 0 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.556;
   display: -webkit-box;
   -webkit-line-clamp: 4;

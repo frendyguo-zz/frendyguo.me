@@ -84,7 +84,7 @@ module.exports = {
               variants: [`900`],
             },
             {
-              family: `Source Sans Pro`,
+              family: `Nunito Sans`,
               variants: [`400`, `500`, `600`, `700`],
             },
           ],
