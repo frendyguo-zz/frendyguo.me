@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Frendy Guo | Personal Blog`,
-    description: `Personal Blog of Frendy Guo. I am passionate about building website`,
+    description: `Hi 👋, I'm Frendy Guo a Frontend Engineer from Indonesia. Welcome to my personal blog. This is where I share my thoughts about the latest web technologies.`,
     author: `@frendyguo`,
     siteUrl: 'https://frendyguo.me',
     defaultImage: '/og-image.png',
