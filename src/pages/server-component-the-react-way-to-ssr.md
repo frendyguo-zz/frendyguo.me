@@ -2,7 +2,7 @@
 title: 'Server Component: The React Way to Server-side Rendering'
 date: '2021-02-07'
 featuredImage: '../images/server_component/rsc.png'
-shortDesc: Understanding Event Loop, Javascripts' underlying concurrency model.
+shortDesc: Introducing the React Component that runs on server and achieve zero bundle size.
 ---
 
 From the very existence of [React](https://reactjs.org/) in the web development world, React has always remained a frontend framework that heavily focuses on client capabilities. The latest React Hooks addition to the React ecosystem further indicates where the framework is heading.
