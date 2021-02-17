@@ -2,7 +2,7 @@
 title: 'The What and Why of React Custom Hooks'
 date: '2021-02-18'
 featuredImage: '../images/why_custom_hooks/hook.jpg'
-shortDesc: Introducing the React Component that runs on server and achieve zero bundle size.
+shortDesc: Understanding the true power of React custom Hooks.
 ---
 Before [React Hooks](https://reactjs.org/docs/hooks-intro.html), we would refer to a non class-based component a **stateless functional component**, or a **dumb component**. Such components wouldn't have access to state nor do they have any lifecycle hook. As a result, the stateless functional component relies on its props as the only input.
 
