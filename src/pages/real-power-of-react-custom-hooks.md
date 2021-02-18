@@ -4,7 +4,8 @@ date: '2021-02-18'
 featuredImage: '../images/why_custom_hooks/hook.jpg'
 shortDesc: And why you should be using them.
 ---
-Before [React Hooks](https://reactjs.org/docs/hooks-intro.html), we would refer to a non class-based component a **stateless functional component**, or a **dumb component**. Such components wouldn't have access to state nor do they have any lifecycle hook. As a result, the stateless functional component relies on its props as the only input.
+
+Before [React Hooks](https://reactjs.org/docs/hooks-intro.html), non class-based components were often called **stateless functional components**, or **dumb components**. Such components wouldn't have access to state nor do they have any lifecycle hook. As a result, the stateless functional component relies on its props as the only input.
 
 For the mere purpose of presentation, the stateless functional component is almost always preferred over a class-based component due to its simpler syntaxes.
 
