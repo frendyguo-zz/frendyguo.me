@@ -1,8 +1,8 @@
 ---
-title: 'The What and Why of React Custom Hooks'
+title: 'The Real Power of React Custom Hooks'
 date: '2021-02-18'
 featuredImage: '../images/why_custom_hooks/hook.jpg'
-shortDesc: Understanding the true power of React custom Hooks.
+shortDesc: And why you should be using them.
 ---
 Before [React Hooks](https://reactjs.org/docs/hooks-intro.html), we would refer to a non class-based component a **stateless functional component**, or a **dumb component**. Such components wouldn't have access to state nor do they have any lifecycle hook. As a result, the stateless functional component relies on its props as the only input.
 
@@ -23,6 +23,7 @@ There are two types of Hooks in React.
 ![React State Hooks](../images/why_custom_hooks/state_hook.jpg 'React State Hooks')
 
 A **State Hook** provides a getter and setter that associates to a single value in a component. The state provided by a State Hook can be of any type, be it object, array, string, number, null, or whatever you want.
+
 Just like state in a class component, changes in a state value causes the component to perform a re-render. For a smaller component with simpler states, `useState` is the perfect solution.
 
 ```jsx
@@ -188,7 +189,7 @@ The built-in React Hooks can be thought of as basic building blocks that you can
 ### Custom Hook Is Just Another Function
 You can do anything you want with it: to store some values, to perform an HTTP request, to translate a piece of text—you name it. As a function, it doesn't specify any signature. **You decide what it takes as an argument and what it should return**.
 ### Custom Hook Is Stateful
-Similar to its component counterpart, a custom Hooks **may have one or more states and side-effects**. When a custom Hooks is attached to a component, React treats it as if the logic was performed by the component itself.
+Similar to its component counterpart, a custom Hooks **may have one or more states and side-effects**. When a custom Hook is attached to a component, React treats it as if the logic was performed by the component itself.
 
 Furthermore, each custom Hook gets its own isolated state. When two components access the same custom Hook, **they don't share the state**. Instead, they will both get a completely independent state.
 
@@ -231,7 +232,7 @@ Fortunately, with the addition of React Hooks, the wrapper hell can now be easil
 - **Only call Hooks either from React function component or custom Hooks**.
 - **Only call Hooks at the top level of your component**.
 
-Finally, React Hooks are flexible and highly**.customizable to suit your needs. You can write custom Hooks that abstract away the complexity and reuse them between components.
+Finally, React Hooks are flexible and highly customizable to suit your needs. You can write custom Hooks that abstract away the complexity and reuse them between components.
 
 ### Bonus
 Here is a non-exhaustive **list of popular custom Hooks libraries** that can make your life easier.
