@@ -51,8 +51,17 @@ const AboutPage = () => {
                     Kurio
                   </div>
                   <div className="mAboutPage-descriptionSectionExperienceItemInfo">
+                    <div className="mAboutPage-descriptionSectionExperienceItemInfoRole">Senior Frontend Engineer <span>@ Pinhome</span></div>
+                    <div className="mAboutPage-descriptionSectionExperienceItemInfoTime">April 2021 - Present</div>
+                  </div>
+                </div>
+                <div className="mAboutPage-descriptionSectionExperienceItem">
+                  <div className="mAboutPage-descriptionSectionExperienceItemOrg">
+                    Kurio
+                  </div>
+                  <div className="mAboutPage-descriptionSectionExperienceItemInfo">
                     <div className="mAboutPage-descriptionSectionExperienceItemInfoRole">Senior Frontend Engineer <span>@ Kurio</span></div>
-                    <div className="mAboutPage-descriptionSectionExperienceItemInfoTime">March 2017 - Present</div>
+                    <div className="mAboutPage-descriptionSectionExperienceItemInfoTime">March 2017 - April 2021</div>
                   </div>
                 </div>
                 <div className="mAboutPage-descriptionSectionExperienceItem">

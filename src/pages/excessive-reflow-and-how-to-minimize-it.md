@@ -2,7 +2,7 @@
 title: Excessive Reflow and How to Minimize It
 date: '2021-12-05'
 featuredImage: '../images/excessive_reflow/reflow.jpg'
-shortDesc: Understand how the web browser render stuffs on your screen and the problem with excessive reflows.
+shortDesc: Understand how the web browser render stuffs on your screen and what to do with excessive reflows.
 ---
 
 Thanks to the advancement of Web APIs today many websites are becoming more and more dynamic — parts of a web page can be disassembled and swapped with a relevant piece of content that aims to help the user achieve a specific goal.
@@ -40,7 +40,7 @@ Consider the HTML and CSS codes below
 ```css
 p {
   font-size: 12px;
-	font-weight: 400;
+  font-weight: 400;
 }
 
 span {
