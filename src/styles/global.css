@@ -22,6 +22,10 @@ body {
  * Ported for PrismJS by Albert Vallverdu [@byverdu]
  */
 
+ .gatsby-highlight {
+	 margin-bottom: 16px;
+ }
+
  code[class*="language-"],
  pre[class*="language-"] {
 	 color: #f8f8f2;
