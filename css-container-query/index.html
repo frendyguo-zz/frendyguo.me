@@ -1,0 +1,456 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.5rem 'Nunito Sans',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Nunito Sans',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;color:hsla(0,0%,0%,0.9);font-family:'Nunito Sans',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;color:hsla(0,0%,0%,0.9);font-family:'Nunito Sans',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.65572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;color:hsla(0,0%,0%,0.9);font-family:'Nunito Sans',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.32951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;color:hsla(0,0%,0%,0.9);font-family:'Nunito Sans',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;color:hsla(0,0%,0%,0.9);font-family:'Nunito Sans',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;color:hsla(0,0%,0%,0.9);font-family:'Nunito Sans',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}ul{margin-left:1.5rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.5rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;font-size:0.85rem;line-height:1.5rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;font-size:1rem;line-height:1.5rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}blockquote{margin-left:1.5rem;margin-right:1.5rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.2rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.2rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.2rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.5rem;margin-bottom:calc(1.2rem / 2);margin-top:calc(1.2rem / 2);}li > ul{margin-left:1.5rem;margin-bottom:calc(1.2rem / 2);margin-top:calc(1.2rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.2rem / 2);}code{font-size:0.85rem;line-height:1.5rem;}kbd{font-size:0.85rem;line-height:1.5rem;}samp{font-size:0.85rem;line-height:1.5rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:calc(0.75rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:var(--textLink);text-decoration:none;}a:hover{color:var(--textLinkHover);}h1, h2{margin-top:3.5rem;}h3, h4, h5, h6{margin-top:2.8rem;}</style><style data-href="/styles.f94b924df07e9946a9e3.css" id="gatsby-global-css">*{box-sizing:border-box}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;--darkBg:#2c2c35;--coral:#fa7268;--deepScarlet:#7f0800;--textLink:#fa7268;--textLinkHover:#7f0800}.gatsby-highlight{margin-bottom:16px}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#282a36}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#6272a4}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#ff79c6}.token.boolean,.token.number{color:#bd93f9}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#50fa7b}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#f1fa8c}.token.keyword{color:#8be9fd}.token.important,.token.regex{color:#ffb86c}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:#f7ebc6;box-shadow:inset 5px 0 0 #f7d87c;z-index:0;pointer-events:none;line-height:inherit;white-space:pre}.mBrand{display:inline-block;padding:8px 0;height:48px;line-height:32px;font-family:Alegreya Sans SC,sans-serif}.mBrand-link{margin-top:1px;-webkit-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;font-size:32px;font-weight:700;color:#fff;text-decoration:none}.mBrand-link:hover{color:#fff}.mHeader{background-color:#333;position:fixed;top:0;left:0;width:100%;height:48px;z-index:100}.mHeader-wrapper{max-width:640px;margin:0 auto;padding:0 16px;align-items:center}.mHeader-menu,.mHeader-wrapper{display:flex;justify-content:space-between}.mHeader-menuLink{color:#fff;font-size:13px;font-weight:700;margin-left:10px}.mHeader-menuLink:first-child{margin-left:0}.mHeader-menuLink:hover{color:#fff}@media screen and (min-width:768px){.mHeader-wrapper{padding:0}}@media screen and (min-width:992px){.mHeader-wrapper{margin-left:180px}}@media screen and (min-width:1200px){.mHeader-wrapper{margin-left:248px}}.mLayout{padding-top:48px;min-height:100vh;display:flex;flex-direction:column;justify-content:space-between}.mLayout-main{background-color:#fff;position:relative;height:100%}.mLayout-footer{background-color:#fa7268;height:100px;padding:20px 0}.mLayout-footerCredit{margin:0;text-align:center;font-size:14px;line-height:60px;color:#fff}.m404Page-wrapper{max-width:640px;margin:0 auto;padding:80px 20px 0;text-align:center}.m404Page-heading{font-size:48px;color:var(--coral);margin:0}.m404Page-description{font-size:16px;font-weight:600;margin:6px 0 0}@media screen and (min-width:768px){.m404Page-wrapper{text-align:left;padding-top:140px;padding-left:0;padding-right:0}.m404Page-heading{font-size:64px}.m404Page-description{font-size:24px}}@media screen and (min-width:992px){.m404Page-wrapper{margin-left:180px}}@media screen and (min-width:1200px){.m404Page-wrapper{margin-left:248px}}.mAboutPage-wrapper{padding:64px 20px 80px;margin:0 auto;text-align:left;display:flex;flex-direction:column-reverse}.mAboutPage-description{margin-top:40px}.mAboutPage-descriptionSection{margin-top:48px}.mAboutPage-descriptionSection:first-child{margin-top:0}.mAboutPage-descriptionSectionHeading,.mAboutPage-descriptionSectionSubheading{position:relative;display:block;display:inline-block;font-size:36px;margin:0}.mAboutPage-descriptionSectionSubheading{font-size:28px}.mAboutPage-descriptionSectionHeading:before,.mAboutPage-descriptionSectionSubheading:before{content:"";position:absolute;bottom:-2px;left:0;width:100%;height:14px;background-color:var(--coral);display:inline-block;opacity:.55;padding-right:12px;box-sizing:initial}.mAboutPage-descriptionSectionSubheading:before{height:10px;bottom:-1px}.mAboutPage-descriptionSectionHeading>span,.mAboutPage-descriptionSectionSubheading>span{position:relative}.mAboutPage-descriptionSectionParagraph{font-size:16px;margin:20px 0 0}.mAboutPage-descriptionSectionParagraph:first-child{margin-top:0}.mAboutPage-descriptionSectionSkill{margin-top:8px}.mAboutPage-descriptionSectionSkillList{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(140px,200px))}.mAboutPage-descriptionSectionSkillListItem{padding-left:16px;margin:0;line-height:24px;font-size:14px;position:relative}.mAboutPage-descriptionSectionSkillListItem:before{content:"\BB";line-height:24px;font-size:14px;position:absolute;left:4px;top:0}.mAboutPage-profilePic{max-width:280px;width:100%;flex:0 0 auto}.mAboutPage-profilePicSrc{padding-bottom:100%;background-color:#dfdfdf;background-size:cover;background-position:top;position:relative}.mAboutPage-descriptionSectionExperience{margin-top:24px}.mAboutPage-descriptionSectionExperienceItem{display:flex;justify-content:space-between;margin-top:20px}.mAboutPage-descriptionSectionExperienceItem:first-child{margin-top:0}.mAboutPage-descriptionSectionExperienceItemOrg{font-size:13px;font-weight:600;width:80px;flex:0 0 auto;margin-right:32px}.mAboutPage-descriptionSectionExperienceItemInfo{width:100%}.mAboutPage-descriptionSectionExperienceItemInfoRole{font-weight:700;font-size:13px}.mAboutPage-descriptionSectionExperienceItemInfoRole>span{color:var(--coral)}.mAboutPage-descriptionSectionExperienceItemInfoTime{margin-top:4px;font-size:12px}@media screen and (min-width:768px){.mAboutPage-wrapper{padding-left:0;padding-right:0;max-width:640px}}@media screen and (min-width:992px){.mAboutPage-wrapper{max-width:800px;margin-left:180px;display:flex;justify-content:space-between;flex-direction:row;padding-top:80px;padding-bottom:100px}.mAboutPage-description{margin-right:40px;margin-top:0}.mAboutPage-profilePic{margin:66px auto 0}}@media screen and (min-width:1200px){.mAboutPage-wrapper{margin-left:248px}}.mContactPage-wrapper{max-width:440px;margin:0 auto;padding:80px 20px 0;text-align:left}.mContactPage-heading{font-size:40px;margin:0;font-weight:400}.mContactPage-guide{font-size:15px;line-height:1.556;font-weight:400;margin:8px 0 0}.mContactPage-mailer{margin-top:10px}.mContactPage-mailerLink{color:#fff;display:inline-block;padding:6px 8px 8px;font-size:14px;line-height:16px;height:28px;font-weight:600;background-color:var(--coral);transition:background-color .1s ease-in-out}.mContactPage-mailerLink:hover{color:#fff;background-color:var(--deepScarlet)}@media screen and (min-width:768px){.mContactPage-wrapper{padding-top:140px;padding-left:0;padding-right:0}}@media screen and (min-width:992px){.mContactPage-wrapper{margin-left:180px}}@media screen and (min-width:1200px){.mContactPage-wrapper{margin-left:248px}}.mProfile-wrapper{display:flex;justify-content:flex-start}.mProfile-avatar{width:80px;flex:0 0 auto!important}.mProfile-avatarSrc{padding-bottom:100%;background-color:#dfdfdf;border-radius:50%;background-size:cover;background-position:top}.mProfile-info{margin-right:16px;display:flex;align-items:center}.mProfile-infoGreet{font-size:21px;line-height:32px;margin-top:16px}.mProfile-infoGreet>p{margin:0}.mProfile-infoName{font-size:18px;line-height:24px;font-weight:600;margin:0}.mProfile-infoRole{font-size:14px;line-height:16px;margin:0}.mProfile-infoRoleCompany{color:#fa7268}.mProfile-infoDesc{font-size:14px;margin:8px 0 0;color:#777;line-height:16px}@media screen and (min-width:768px){.mProfile-wrapper{justify-content:flex-start}.mProfile-info{margin-right:20px}.mProfile-infoName{font-size:28px;line-height:34px}.mProfile-infoRole{font-size:15px;line-height:22px}.mProfile-infoDesc{font-size:15px;line-height:18px}.mProfile-avatar{width:110px}}.mHomePage{padding:32px 20px 48px;margin:0 auto;max-width:640px}.mHomePage-separator{width:120px;height:1px;background-color:#dfdfdf;margin:32px 0 0}.mHomePage-blog{margin-top:24px}.mHomePage-blogPost{margin-top:80px}.mHomePage-blogPost:first-child{margin-top:0}.mHomePage-blogPostByline{font-size:14px;line-height:20px;margin-top:6px;color:#969696;font-weight:500}.mHomePage-blogPostBylineDivider{padding:0 6px;display:inline;font-weight:700}.mHomePage-blogPostBylineDivider:after{content:"\B7"}.mHomePage-blogPostTitle{font-size:24px;line-height:31px;color:#222;font-weight:700;margin:0}.mHomePage-blogPostTitle>a{color:#222}.mHomePage-blogPostExcerpt{color:rgba(0,0,0,.75);margin:4px 0 0;font-size:16px;line-height:1.556;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}@media screen and (min-width:768px){.mHomePage{padding-top:64px;padding-left:0;padding-right:0}.mHomePage-separator{margin:48px 0 0;width:160px}.mHomePage-blog{margin-top:48px}}@media screen and (min-width:992px){.mHomePage{margin-left:180px;padding-left:0;padding-right:0;padding-bottom:120px}}@media screen and (min-width:1200px){.mHomePage{margin-left:248px}}.mPostPage{padding:0 0 48px;margin:0 auto;max-width:640px}.mPostPage-fm{padding:20px 0 0}.mPostPage-fmCover{margin:16px 0 0}.mPostPage-fmCoverSrc{margin:0;display:block}.mPostPage-fmInfo{padding:0 20px}.mPostPage-fmInfoTitle{color:rgba(0,0,0,.84);font-size:27px;line-height:36px;margin:0;font-weight:700}.mPostPage-fmInfoByline{font-size:13px;line-height:16px;margin-top:6px;color:#646464;font-weight:500}.mPostPage-fmInfoBylineDivider{padding:0 6px;display:inline;font-weight:700}.mPostPage-fmInfoBylineDivider:after{content:"\B7"}.mPostPage-content{padding:0 20px;margin-top:20px}@media screen and (min-width:768px){.mPostPage-fm{padding-top:64px}.mPostPage-fmInfo{padding-left:0;padding-right:0}.mPostPage-fmInfoTitle{font-size:36px;line-height:44px}.mPostPage-fmCover{padding:0;margin-top:20px;margin-left:-32px;margin-right:-32px}.mPostPage-content{padding:0;margin-top:24px}}@media screen and (min-width:992px){.mPostPage{margin-left:180px;padding-left:0;padding-right:0;padding-bottom:120px}}@media screen and (min-width:1200px){.mPostPage{margin-left:248px}}</style><meta name="generator" content="Gatsby 2.32.3"/><title data-react-helmet="true">CSS Container Query: A Media Query on Steroids — Frendy Guo | Personal Blog</title><meta data-react-helmet="true" name="description" content="A closer look at the upcoming CSS feature: Container Query"/><meta data-react-helmet="true" property="og:title" content="CSS Container Query: A Media Query on Steroids"/><meta data-react-helmet="true" property="og:description" content="A closer look at the upcoming CSS feature: Container Query"/><meta data-react-helmet="true" property="og:url" content="https://frendyguo.me/css-container-query/"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@frendyguo"/><meta data-react-helmet="true" name="twitter:title" content="CSS Container Query: A Media Query on Steroids"/><meta data-react-helmet="true" name="twitter:description" content="A closer look at the upcoming CSS feature: Container Query"/><meta data-react-helmet="true" name="google-site-verification" content="rMoO_lFxVeo560aiNPbEMWe7Z0XsY0ktdy1S3sm98vg"/><meta data-react-helmet="true" property="og:image" content="https://frendyguo.me/static/e092dea402bf681cd99d2a9e96d8bd3f/f422e/bunch-of-containers.jpg"/><meta data-react-helmet="true" name="twitter:image" content="https://frendyguo.me/static/e092dea402bf681cd99d2a9e96d8bd3f/f422e/bunch-of-containers.jpg"/><link rel="icon" href="/favicon-32x32.png?v=db5609c76cb3c8e554e204d0faa0e78b" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=db5609c76cb3c8e554e204d0faa0e78b"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/alegreyasanssc/v13/mtGm4-RGJqfMvt7P8FUr0Q1j-Hf1DspC4iNhMA.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2"/><style>@font-face{font-family:Alegreya Sans SC;font-style:normal;font-weight:900;src:url(/static/webfonts/s/alegreyasanssc/v13/mtGm4-RGJqfMvt7P8FUr0Q1j-Hf1DspC4iNhMA.woff2) format("woff2");font-display:swap}@font-face{font-family:Alegreya Sans SC;font-style:normal;font-weight:900;src:url(/static/webfonts/s/alegreyasanssc/v13/mtGm4-RGJqfMvt7P8FUr0Q1j-Hf1DspC4iNhNg.woff) format("woff");font-display:swap}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/static/webfonts/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format("woff2");font-display:swap}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:600;src:url(/static/webfonts/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2) format("woff2");font-display:swap}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:700;src:url(/static/webfonts/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format("woff2");font-display:swap}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:400;src:url(/static/webfonts/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce9I90.woff) format("woff");font-display:swap}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:600;src:url(/static/webfonts/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85tU1c.woff) format("woff");font-display:swap}@font-face{font-family:Nunito Sans;font-style:normal;font-weight:700;src:url(/static/webfonts/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5tU1c.woff) format("woff");font-display:swap}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-22a12fbf2a0c9aa4e195.js"/><link as="script" rel="preload" href="/framework-741ade27086b2708e961.js"/><link as="script" rel="preload" href="/app-c1fd813b1bddfad27b4b.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/commons-80983d8e1774978fa56f.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-0986093f5936688b470e.js"/><link as="fetch" rel="preload" href="/page-data/css-container-query/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3649515864.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/572726844.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="mLayout"><header class="mHeader"><div class="mHeader-wrapper"><div class="mBrand"><a class="mBrand-link" href="/">FG.</a></div><div class="mHeader-menu"><a class="mHeader-menuLink" href="/about">→ About</a><a class="mHeader-menuLink" href="/contact">→ Contact</a></div></div></header><main class="mLayout-main"><div class="mPostPage"><div class="mPostPage-fm"><div class="mPostPage-fmWrapper"><div class="mPostPage-fmInfo"><h1 class="mPostPage-fmInfoTitle">CSS Container Query: A Media Query on Steroids</h1><div class="mPostPage-fmInfoByline"><span>December 11, 2021</span><div class="mPostPage-fmInfoBylineDivider"></div><span>8<!-- --> min read</span></div></div><div class="mPostPage-fmCover"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;max-height:480px"><div aria-hidden="true" style="width:100%;padding-bottom:66.25%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDAf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAGaUWdAX//EABkQAQADAQEAAAAAAAAAAAAAAAEAAhExMv/aAAgBAQABBQJdnZqy1Z6Wzv8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAEDAQE/Aauv/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABsQAAICAwEAAAAAAAAAAAAAAAARASEQMUFh/9oACAEBAAY/AlGjyCnhcKpH/8QAGRABAQEBAQEAAAAAAAAAAAAAAREAIUFh/9oACAEBAAE/IW6CPcI+69UHw0oDxxAiZcJHE3//2gAMAwEAAgADAAAAEMcv/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQAR8PH/2gAIAQMBAT8QBVkM9n//xAAYEQACAwAAAAAAAAAAAAAAAAAAEXGR8P/aAAgBAgEBPxBIhqP/xAAdEAEBAAEEAwAAAAAAAAAAAAABEQAhQWHBMXGR/9oACAEBAAE/EBAAAYhMdGiCju95SoVksfd8DTyNJjBxDoPHn3zldRhF2vef/9k=" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/e092dea402bf681cd99d2a9e96d8bd3f/e75b5/bunch-of-containers.jpg 160w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/c01e2/bunch-of-containers.jpg 320w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/f422e/bunch-of-containers.jpg 640w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/a6352/bunch-of-containers.jpg 960w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/ec6c5/bunch-of-containers.jpg 1280w" sizes="(max-width: 640px) 100vw, 640px" /><img loading="lazy" sizes="(max-width: 640px) 100vw, 640px" srcset="/static/e092dea402bf681cd99d2a9e96d8bd3f/e75b5/bunch-of-containers.jpg 160w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/c01e2/bunch-of-containers.jpg 320w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/f422e/bunch-of-containers.jpg 640w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/a6352/bunch-of-containers.jpg 960w,
+/static/e092dea402bf681cd99d2a9e96d8bd3f/ec6c5/bunch-of-containers.jpg 1280w" src="/static/e092dea402bf681cd99d2a9e96d8bd3f/f422e/bunch-of-containers.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div></div><div class="mPostPage-content"><p>She's finally here. Well, almost.</p>
+<p>One of the most requested web features finally sees the light of day. As of today, container query is on its first <strong>public working draft</strong> — meaning this feature has proven to be essential and deemed possible to be included in future versions.</p>
+<p>You can even try it now on Google Chrome. Go to <code class="language-text">chrome://flags/#enable-container-queries</code> on your Chrome browser, set it to <code class="language-text">enabled</code> and you’re good to go.</p>
+<h2>Container Query</h2>
+<p>A new CSS query that offers a possibility for a descendant element to apply styling rules based on the container.</p>
+<p>While media query applies specific styling based on viewport and media preferences, container query takes it a step further by allowing the contained element to target the container elements. This offers more granular controls to the contained element.</p>
+<p>Here's simple usage of container query,</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.card</span> <span class="token punctuation">{</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.container</span> <span class="token punctuation">{</span>
+	<span class="token property">container-type</span><span class="token punctuation">:</span> inline-size<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@container</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+	<span class="token selector">.card</span> <span class="token punctuation">{</span>
+		<span class="token property">background-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>This basically tells the browser to apply style <code class="language-text">background-color: blue</code> <strong>if</strong> the container is at least 300px wide.</p>
+<p>The syntaxes are fairly simple and quite similar to that of media query. Container query comes with <strong>three extra properties</strong> and <strong>a rule</strong>.</p>
+<p>First, we have <code class="language-text">container-type</code>, this property is used to establish the element as <strong>query container</strong>, this will allow the child component to query against it.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.foo</span> <span class="token punctuation">{</span>
+  <span class="token property">container-type</span><span class="token punctuation">:</span> none | style | state | size | inline-size | block-size<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Second, <code class="language-text">container-name</code> sets a name to the container for further filtering. Sometimes we might not want to target the nearest ancestor container, this property serves as an escape hatch.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.foo</span> <span class="token punctuation">{</span>
+  <span class="token property">container-name</span><span class="token punctuation">:</span> my-container<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>And finally, <code class="language-text">container</code> is used as a shorthand property that can be used to set both <code class="language-text">container-type</code> and <code class="language-text">container-name</code> in a single declaration.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.foo</span> <span class="token punctuation">{</span>
+  <span class="token property">container</span><span class="token punctuation">:</span> inline-size / my-container<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>To target the container, we use <code class="language-text">@container</code> to specify the rule to target the nearest containment context.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css">// Applies if the nearest query container is at least 700px wide
+<span class="token atrule"><span class="token rule">@container</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 700px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+// Applies if the nearest query container has an inline-size of more than 100px
+<span class="token atrule"><span class="token rule">@container</span> <span class="token punctuation">(</span>inline-size > 100px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+// Applies if the nearest query container named `my-component` is at least 700px wide
+<span class="token atrule"><span class="token rule">@container</span> my-component <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 700px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre></div>
+<p>This is very exciting because the child element can be made aware of its surroundings and can decide for itself how to react.!</p>
+<h2>A Highly Modular Component</h2>
+<p>Consider a <strong>Card</strong> component, a fairly common piece of an element that you've probably seen before. This component has the following attributes: A thumbnail, a headline, a description, and some tags.</p>
+<p>We want the component to adapt to different screen sizes. On the smallest viewport, the thumbnail and details are stacked vertically. On a slightly larger viewport, the thumbnail will reside on the left. And finally, on the largest viewport, our content will sit on top of the thumbnail.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/894e17884c252d956a3e79bfc24504c1/32ac3/responsive-layouts.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 51.87500000000001%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABLklEQVQoz3WSC4+CQAyE9///QEGBgCCoPCThIYhA775NSojnkUy6W3anM92a8/ksaZrK5XLZwD6OYynLUpIk2fJZlgnnyTVNI8MwSN/30ratPJ9Peb/fYjjAwU9AUBTFRgRut5ucTifxPE9837cxiiK5Xq9SVZXwbYSo+kaIUtaoIh+GoSUh8n8cR9FvXVcx/ITs0zaFsExlIng8HptNABlWu66ze9pgtDKEWKIqYA0BgFQBcX6/y/0XWmgPU9f1po4Lr9fLqqA6Vf97tM+cwlDJcRxxXddGcDgcJAgCa4WWAJzQ/G8PuIdBlTZZo44EhLwmOR5HlUGsoDWq2hLq5X1ztdnMF8oZlePxaCPkqFXLxP2sGoZxnmdZlsX2T/dgmqY/zcdRnucW+wlgzdkfUzHpeWpdDk0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Responsive Layouts"
+        title="Responsive Layouts"
+        src="/static/894e17884c252d956a3e79bfc24504c1/6af66/responsive-layouts.png"
+        srcset="/static/894e17884c252d956a3e79bfc24504c1/69538/responsive-layouts.png 160w,
+/static/894e17884c252d956a3e79bfc24504c1/72799/responsive-layouts.png 320w,
+/static/894e17884c252d956a3e79bfc24504c1/6af66/responsive-layouts.png 640w,
+/static/894e17884c252d956a3e79bfc24504c1/d9199/responsive-layouts.png 960w,
+/static/894e17884c252d956a3e79bfc24504c1/32ac3/responsive-layouts.png 1249w"
+        sizes="(max-width: 640px) 100vw, 640px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Let's start with the HTML codes,</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-thumbnail<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-thumbnail-wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-detail<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-tag<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-tag-item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Technology<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-tag-item<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Entertainment<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Headlines: The Good, The Bad, and The Ugly<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card-description<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam eros justo, sit amet sollicitudin ligula aliquet vel. Sed a neque turpis.
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
+<p>And the CSS,</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.card</span> <span class="token punctuation">{</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+	<span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 2px 6px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> .5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-thumbnail</span> <span class="token punctuation">{</span>
+	<span class="token property">flex</span><span class="token punctuation">:</span> 0 0 auto<span class="token punctuation">;</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> #DFDFDF<span class="token punctuation">;</span>
+	<span class="token property">border-top-left-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+	<span class="token property">border-top-right-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+	<span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-thumbnail-wrapper</span> <span class="token punctuation">{</span>
+	<span class="token property">padding-bottom</span><span class="token punctuation">:</span> 56.25%<span class="token punctuation">;</span>
+	<span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+	<span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'./mountain.jpeg'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+	<span class="token property">background-size</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span>
+	<span class="token property">background-position</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-detail</span> <span class="token punctuation">{</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-title</span> <span class="token punctuation">{</span>
+	<span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> 19px<span class="token punctuation">;</span>
+	<span class="token property">font-weight</span><span class="token punctuation">:</span> 600<span class="token punctuation">;</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 8px 0 0 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-description</span> <span class="token punctuation">{</span>
+	<span class="token property">font-size</span><span class="token punctuation">:</span> 13px<span class="token punctuation">;</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> 17.2px<span class="token punctuation">;</span>
+	<span class="token property">margin-top</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-tag</span> <span class="token punctuation">{</span>
+	<span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+	<span class="token property">justify-content</span><span class="token punctuation">:</span> flex-start<span class="token punctuation">;</span>
+	<span class="token property">gap</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-tag-item</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 4px 6px<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> 6px<span class="token punctuation">;</span>
+	<span class="token property">font-size</span><span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+	<span class="token property">font-weight</span><span class="token punctuation">:</span> 600<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>So far so good. Our card looks good on a smaller screen, exactly as we planned.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 398px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d9677f8d9d271c3be6faf084e891bb60/692d4/mobile-card.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 113.75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAFDklEQVQ4y4WUeWxUVRTGn4KJisY/XBIIAipBo0QagyWyuBAkRYq7iQQlxIKiuIAsQoG01C50WqSlpQsFxlKtpTESEKGldLoNhc7Svs50m+m0nbZ235fpzHT7+e6r8AdBucn3znfePfd859z73pUmJiZwuz14PF7cHmE9jCi+W/Fd7im4vaMMu0cZcI0ypFiXZ5QRBcOeKf8mxicmkbpamqnQXaTBVEiDXExNeQlyqQGDyUhWoYFsvZkCg8zv+TIxFyvYkVHJhtNW1iWX4xcvs/Z4Oe+kVPLmcSu6qk6k3tZGekqzcNvzGKkvYrDJzECjic56A822EpprZZx11chWC9fMMueKyok8b+HD5DLeijWx9IiZpTFl+Bw2caG0BWm4s4kxxyUm2vWMt+Uz1pSDtzkPV2MhY23XcdbokY06mhwm6h1Wqqpk9AYTGVdNHP3DyG7tDfakGthx8jrXKv9GGmqrxWtOYdz2G+OOs4zXZeKtO4fHmc1wfS6bfghh49bPCQ7aQW52Ok5HGTfKyjhfYECbbST5opGws0a+OXGdIquSsL3WSs0vO+nK2ktfYTAjchJj9gzo0RGo+YnF/gGcOHaI9FMRHEmKxVSQTneDCYtV5oKyx3GXTGxJLWX1EQNZstJyQ5WFP6O/4oZ2G3LmdjoKwnBZtOyNiGKm/x581gSgTfwRbVIEn+0L542A3RyO1TDkLKbJXkLONT0ZeQbSrxqpblASNtfZyE6NpjAjkrILUfQYU9gbFMhDK77gmWXreWrJe6xcvZbvdu4iTKNh4/4YfAMOsTkwGJtB6aQtB9oLcDtzGexuRKqpqmJ34EEuZyZhvKzF/6NN3DN7OQ/MWc5ji9ax+O2tPPbc6yxcto6d+w5w9tcUPvn2IC9/vAvflf7sjwjHbsliwHmF/s46JaHdwddKKy+++j5zffyQHlnIfU/4MGPecl7y24Sv/xamzXmNGQtWMdf3XbZt/56Nm7/kaYUvWvUpr2zYx4oPtuC3fjN/KXsqFZeUMWvhGiRptoKZSPc+qdhZ/0Lh0+ch3b8A6eEXFDsf6cH5TH/0WaRpc5m5aA1LFEHpcV9l7nlSMy8hVVTZOBB6jJDIRBVB4XGERicRfvQkwZpEFUGRCQRHJSqHcZLYhFNoYpIJj04gRJOA5vgZwuPTCI1NRa6wIaGMPF0OkYfDiDsWgyYygtyrVyjIyyVK4XGxR4mPiyEsNET5Jc383xgbG0UaHR1Fp8sjOfkEp09rST1zhvz8AnJ1OpKSkklLS0Or/Zm4+HiMRhOTk5N4vcqF4XYzMDCIR+FeJYe4XIaHh5HE7dLc3ExxcTF6vZ7S0lLVt1qtVFdXYzabaWxsVLnRaKSoqIjy8nKVi1jBc3Jy1DVCSBoZGVEzt7e309XVpaK3t5fu7m6VC9vR0UFfXx89PT0qFxAxwm9tbVUFhS+qlsRDvKyrq6O+vh6bzYbT6aSmpgaHw6Eq2+12Ghoa1IUiTvjCdnZ2qoXcFL+VsK2tTQ0SySorK9VEgos2BReLRUIh0tTUpPq1tbXKHg6oEJe0GC6XC0k8RDuiSqEmVIWAgOCiQqEuYsT8zbZbWlrUGNGNyDE+Pj51KGIjBwcHGRoaUu3tEO9FFf39/aov+O3zYk4IigNWE8qyfCv4doj3Qlngv2LEnMVimapQ9C9UxPd4JwjVPuUE+5QqxH6Lj/dOcSKHaFviLkMEt7e24FAOYmBw6G7h/AOY99XEApRPaQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Mobile Card"
+        title="Mobile Card"
+        src="/static/d9677f8d9d271c3be6faf084e891bb60/692d4/mobile-card.png"
+        srcset="/static/d9677f8d9d271c3be6faf084e891bb60/69538/mobile-card.png 160w,
+/static/d9677f8d9d271c3be6faf084e891bb60/72799/mobile-card.png 320w,
+/static/d9677f8d9d271c3be6faf084e891bb60/692d4/mobile-card.png 398w"
+        sizes="(max-width: 398px) 100vw, 398px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>On a slightly larger viewport, instead of media query, we will utilize container query to help us deal with the transformation.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@container</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 321px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+	<span class="token selector">.card</span> <span class="token punctuation">{</span>
+		<span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-thumbnail</span> <span class="token punctuation">{</span>
+		<span class="token property">width</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
+		<span class="token property">border-top-right-radius</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">border-bottom-left-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-thumbnail-wrapper</span> <span class="token punctuation">{</span>
+		<span class="token property">padding-bottom</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-detail</span> <span class="token punctuation">{</span>
+		<span class="token property">padding</span><span class="token punctuation">:</span> 16px 12px<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>We can use <code class="language-text">display: flex;</code> to stack the content horizontally, and we also added some minor adjustments to the thumbnail and details to ensure it still looks good.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/377588887dc02c4aac5304fe26ca0569/6e9ba/medium-card.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 37.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABiklEQVQoz32RzUsCURTF5x+I/oDWRbkoaFOLFn1BqyJwH7RrV6uKrBYxugjatGnRIoJQWiRBi2jjaqQhSsPJxK9MVKjR0XEc83tO3mdKSvTgx4H7Lvedex7ncEm4ckdx4orh4PYdl0+f0DUVspxGLpdDPp9HOp1mFItFNBqNDvV6nVGr1TrKxfwCPN4H3N17senwYM/px8X5GSyWXdjtdobVagXP8xAEAXQqlQqq1Sob8vtQnft4uQZ/aMON8xR+n4jH1zeEQiGIoohwOIxgMAhJkhAIBBjRaBSRSIT1kBqGwdyS0iPcwso65s2r2Lfy2Dk6hu/ZDUVRkEylkPohkUgwTSaTbFA8HmeDCaqRZrPZ1spc/yj6BudgmlrG2KwZa1s2KBmZOaNBhUIBmqZ1oEwJVVWZUq6ktD5zOGCaxtDEEoYnFzEyPoONbR5GcwWtOYiaqamd2X9QT7lcBpfJKOw3VUJtaa8jXde73P0FOZZlGVwzza6faofcDppepvy+SiV23673QnXK8BsBPjiFnVgQUwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Medium Card"
+        title="Medium Card"
+        src="/static/377588887dc02c4aac5304fe26ca0569/6af66/medium-card.png"
+        srcset="/static/377588887dc02c4aac5304fe26ca0569/69538/medium-card.png 160w,
+/static/377588887dc02c4aac5304fe26ca0569/72799/medium-card.png 320w,
+/static/377588887dc02c4aac5304fe26ca0569/6af66/medium-card.png 640w,
+/static/377588887dc02c4aac5304fe26ca0569/6e9ba/medium-card.png 731w"
+        sizes="(max-width: 640px) 100vw, 640px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>And finally, on the largest viewport we updated our thumbnail to fill up the spaces, add some dark overlay on top of the thumbnail with <code class="language-text">background: linear-gradient(....);</code>, we also set our <code class="language-text">.card-detail</code> to <code class="language-text">position: absolute;</code> and changed the color of our headline and description to <code class="language-text">#ffffff</code></p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@container</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 561px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+	<span class="token selector">.card</span> <span class="token punctuation">{</span>
+		<span class="token property">position</span><span class="token punctuation">:</span>  relative<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-thumbnail</span> <span class="token punctuation">{</span>
+		<span class="token property">width</span><span class="token punctuation">:</span>  100%<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-thumbnail-wrapper</span> <span class="token punctuation">{</span>
+		<span class="token property">padding-bottom</span><span class="token punctuation">:</span> 45%<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-thumbnail-wrapper::after</span> <span class="token punctuation">{</span>
+		<span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+		<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+		<span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+		<span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+		<span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to bottom<span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.05<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.55<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-detail</span> <span class="token punctuation">{</span>
+		<span class="token property">padding</span><span class="token punctuation">:</span> 28px 20px<span class="token punctuation">;</span>
+		<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+		<span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-title</span> <span class="token punctuation">{</span>
+		<span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+		<span class="token property">color</span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token selector">.card-description</span> <span class="token punctuation">{</span>
+		<span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+		<span class="token property">color</span><span class="token punctuation">:</span> #ffffff<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Our card now looks like this if the container is at least <code class="language-text">560px</code> wide.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c9d3d0ca06991b2df8c977046704b2ac/eb4a1/desktop-card.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC7klEQVQoz42RXU+TBwCFXy/mhReGL+MiyFyUIEIiQTI3UJSJqNUKWmld1Y0AnajUWgerUaDGAolSefvWthRpMZRQW0QQRYoSHQytwjJpa+OQIIlZdMb/MB+rv8CTPDdPzrk6wpvII97/E+Td3BT/LYR5+yrM67kZFmafMfcixMvZKOHnEf4OhXn8LMJIMIptJIrBH6bu+gwnvWF0vudUdofo/+tfhPkJDwvT/cxP9TH/tI+5J33MPrlJNDjAi6e3CQUDzEw94NGfY4zcCzA4fBe7dxiDc5iK1tvsOj/I3uYhiupv4hieQQjdbSPysJPImJ3wPYnQWDvTgU6i4x5cbivqEydpPn+aq04zoyM3uDXUT5fXj9jlw+T0cdZyndNmH79e6MEbmEYYtWj4w6VjwlPHpM/IuL+J4JDIqF8iu7AUmaIMtVKGVqfBaj5H4JYHT083YoebBsmNQeziF9M1NmvbsfZPIkg1xXQ3ltLbXMaA5SgBt4EBl5FCVSVL1xVRqz9KS301v/2u40CVhgZDNT63SLfbQatFosZkZe8ZBz8cE7HeGEfQq4torN5Ns06O0/gTYkMF6ZvlJOXISUjLY0thISqFDIVKyfpt+1m5qYQ9KhWdlnq67Caky0aktiYutTQydj+AoCk/TJ22ktoTP1OrrSK3YAdxGVtJzcxnedp3rF2/kdyN+RxQKilVKNi2/wip38vILChGf/wg1hYtrrY6rE01TNwfQNCe0mO3XMTUeAZ5WTkFO8v4UaZEflCDskJLcckhdpSo2VS0h0OH1WiqysnbXkL2lt2kZeVSvE9FQ70eo6GSO4O9CFkb8klek038inSWJK4i7us1JKZkEJecTkLKWhYtXYnw1TIWJ35LQsxl5+SQujqDxfHfsCK2S87MI2lVFsKSJE6da0K44nDRKtq5bLHRJjli2D9jjrlW0YZ4xYnk6MRi6+DSp5419qbdGfMdXPN46en1Y2t3cdEsMTH5GIEvyYf/+dJ8BPBYPtYL4s+bAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Desktop Card"
+        title="Desktop Card"
+        src="/static/c9d3d0ca06991b2df8c977046704b2ac/6af66/desktop-card.png"
+        srcset="/static/c9d3d0ca06991b2df8c977046704b2ac/69538/desktop-card.png 160w,
+/static/c9d3d0ca06991b2df8c977046704b2ac/72799/desktop-card.png 320w,
+/static/c9d3d0ca06991b2df8c977046704b2ac/6af66/desktop-card.png 640w,
+/static/c9d3d0ca06991b2df8c977046704b2ac/d9199/desktop-card.png 960w,
+/static/c9d3d0ca06991b2df8c977046704b2ac/eb4a1/desktop-card.png 1083w"
+        sizes="(max-width: 640px) 100vw, 640px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Awesome, our card component looks great on different viewports. But more importantly, what makes container query excel is that we can reuse the same component in more complex layouts. </p>
+<p>I created an example to demonstrate the prowess of container query,</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>grid-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> 
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>grid-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>grid-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></div>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.grid-4,
+.grid-2,
+.grid-1</span> <span class="token punctuation">{</span>
+	<span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+	<span class="token property">column-gap</span><span class="token punctuation">:</span> 24px<span class="token punctuation">;</span>
+	<span class="token property">margin-top</span><span class="token punctuation">:</span> 24px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.grid-4 > div,
+.grid-2 > div,
+.grid-1 > div</span> <span class="token punctuation">{</span>
+	<span class="token property">container-type</span><span class="token punctuation">:</span>  inline-size<span class="token punctuation">;</span>	
+<span class="token punctuation">}</span>
+
+<span class="token selector">.grid-4</span> <span class="token punctuation">{</span>
+	<span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr 1fr 1fr 1fr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.grid-2</span> <span class="token punctuation">{</span>
+	<span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr 1fr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.grid-1</span> <span class="token punctuation">{</span>
+	<span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 640px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2c321dfd8b8d2293ba902b94021d462b/39a20/complex-layouts.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEzElEQVQ4y02UC0yVZRjHv7W2VrZam12UXC2Xpk5RVEC8InhDFDh4ARVRuZViiqBAWCoIgoCmoIBHLqKACAIl4AUNRAU5wBEFwwMhGIe7IMr1gPjrPadafdt/z/bb73u+59m+95UG1Ep6m5U8qnpA/G0Vgdl1DLdU0KMup1Kw2HwVIVfrGRJOj7pMx84KFna9gcHGMp33sKoCuZbdqEeqzY/leIgPG7/bxak4Oek371BXmMDRwL047vAgUrCsgmJqC2IJDvBiy849Ou9K4X2qb8YQ9A+LSogju7AYyT8kghmm6zGzdcVhuzfxyZcIDD3FdB1zwWGHD+dTL3Mo+CQGi+0wtXHG0d2XpLRM/ALCmSHYYpkL277341xKGlLFgwoK8vMpVShoaW7m9QgolUoKbxegKLlPa0sLw6/f/I+V0NraytDwCGVlZTpWqiiho72dAc0wUltbK6qaGhrValrb2tBoBmkTL9TW/kFTUxPtQtRoNGi9GlUNasHahDc4OCgatwivliYxyL+e1NbegVo06+7qpK+vD+3zvPM5jY2NQurgxYtuhoaGxMc6aNJ6L/7zOjo6dJ62dnd3/92wtbmBvIo6cpTPqFCW69aoq6tjYGBA12hk5I2uNqnruVnxlOzyBiofPqBEUarztJNqNFpvRFel5MTTbN3lSfatAp2gUqmof/pUTNRKZ2cnr3p64M1rEuMjcfbw0nnP6p+K9VU8a2igXazfJby+3l6GtBO6+wSzYJUj51PSdWv09w+I9NMjhB7RrPvlKzGhhm/3BjFv1RYSUjIZfgNdr/pF+uh62csLka6XPfT2DyJ11ijpfnKX578X0Pj4No3VxfxZXURd1T1UD0UqFVQ90v7kj6iorCSvWElsjgKPxBJc5MVsiCpmXXQJVhHF+KVXIdUVZfIkP46a+6nUFF1Adfc81XeTqSq8SHVROvdupfPb9XSKbmeTl5dNdu4VUjJ+ITQ+C+/ITByCLmMXKOKfxsGEfKTHeXGUZgSizD1OeU6YSDiKnJMocmO4c0WOtfNO1m6yY88uJ+Ll4WT/mkpS6kUi4pM4HJ3EgcgkPMOT2HboHAGx15Cuyf3JCNrA1Qgnbsh3civxB26l+FOWG8lGZzf0F1ji5mTHXo9t7PbaQWLMYbJSY5HHnSUoIgbv8DM4+J/F2D0Kt2NZSNHiLB5xNePUPkvkP8m4GOZMxmkvHN1ceX+GFfrzV3LQxwVfT2dWb3ZhofUaPD1cSUv4mTOnj3EgJAyXA8ex8w7HP/oSUkTQj+xzsmL/dhnBXus4F+yMpUzGB/oWfDZ5AWMmzMbY2BAr69WstFnDVPN1fDHfCpn9ek6F7iXupC+xJ/yICvUmI/kMkp/PPjbYWnJw92Z8t9tjZDKPt0ZP5J1PJvLup5MYN9mY0XoTmDZzDja2Muw3bsBkmQw9wxXMMpmL89a1HAsUt9KRXWRcOIHk4b2fVTa2OGzaiPF8cz7Um8KY8dMZ8/VMxn5jyOeTjJDe0+Ptj74UfCqrLZdhYGiE3sSZjPr4K0aNm8oU40WYmi1g9z5PpICgo5hbiFUMzZg9bylzF63AxNQCk0UWzJ6/lFlzlzDN2ByDectFlmG0cDnLLFZhILiRcJdb26M/Zwljx09j/VZ3/gIovgbEDzDkxAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Complex Layouts"
+        title="Complex Layouts"
+        src="/static/2c321dfd8b8d2293ba902b94021d462b/6af66/complex-layouts.png"
+        srcset="/static/2c321dfd8b8d2293ba902b94021d462b/69538/complex-layouts.png 160w,
+/static/2c321dfd8b8d2293ba902b94021d462b/72799/complex-layouts.png 320w,
+/static/2c321dfd8b8d2293ba902b94021d462b/6af66/complex-layouts.png 640w,
+/static/2c321dfd8b8d2293ba902b94021d462b/39a20/complex-layouts.png 859w"
+        sizes="(max-width: 640px) 100vw, 640px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The same components, under the same viewport, adapt to different layouts gracefully. Without container query, you would need a workaround to make this work, perhaps by adding a class name to differentiate the selector or involving Javascript.</p>
+<p>Moreover, depending on global viewport via media query makes our component less modular — in other words, they are much harder to reuse across different layouts.</p>
+<h2>Size and Other Aspects</h2>
+<p>We might not always know the dimension ahead of time. But worry not, the container query comes with a number of declarative query types you can use to evaluate against the container.</p>
+<h3>Container Size Query</h3>
+<p>The first type, container size query establishes the container to enable query against its size. Possible values of this type are <code class="language-text">size</code>, <code class="language-text">inline-size</code> and <code class="language-text">block-size</code>.</p>
+<p><code class="language-text">size</code> type establishes the container to be queried against its size in both inline and block axis.</p>
+<p>In CSS, inline and block axes refer to the direction in which text flows within a line. For example in the English language, text flows from left to right and top to bottom.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 521px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6751cf3bb92892f01710e229752cf594/bb9c5/inline-block-axes.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.125%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABq0lEQVQoz3WSWWvCQBSF/f+/Q7Di+iKo4JZqVWIRXFHcwMQFl1DEJTXRfmbMGG17HoZJ5pw759w7vqsLy7L2+/3pdDoej7Zt8zmbzZbL5dzBZrMRHE7hwGTvk+LD4bBYLLbb7Wq1gmGaZr/fH41Gw+Gw2+2Ox2NRnVMKwYRzE18uFzTiTgFI1Dqfz98OIECjHHvLBfy7GHscNJvNXC6nKMq7A8VBoVDgfl3XySJtIqH6XYwT7snn836/PxgMvnkQCATC4TC11uu1IIv1YZsk3ExIVVU/f6FerxuGIZUPse2AkETa7XZfLgwP6Ai5sOa1fRNPJpNSqcQZDajVaolEIplMplIpfn64KJfLZMbaq5hh4qrVajFMgpGZnKFQqFKpqC6q1epgMLh68MgMxGDR01hGytrr9Rhvu93udDqNRkPTtD8ysyMznUTMipG5C/5c/8FTtxkVkciJ4Xg8HovFotFoOp0Wc85kMiSaTqcy9uuoaCa9kWIQiUSYMH+oUiwWs9ksr1Lwn8QYptv0nPKaC90BGwYp0nGz6UC8ZZ83huzHC3jJ4mHjTr5tyD+muTHenmyFJAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Inline and Block Axes"
+        title="Inline and Block Axes"
+        src="/static/6751cf3bb92892f01710e229752cf594/bb9c5/inline-block-axes.png"
+        srcset="/static/6751cf3bb92892f01710e229752cf594/69538/inline-block-axes.png 160w,
+/static/6751cf3bb92892f01710e229752cf594/72799/inline-block-axes.png 320w,
+/static/6751cf3bb92892f01710e229752cf594/bb9c5/inline-block-axes.png 521w"
+        sizes="(max-width: 521px) 100vw, 521px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Container set to a <code class="language-text">size</code> type allows it to be queried upon its <code class="language-text">width</code> and <code class="language-text">height</code>. And similarly, <code class="language-text">inline-size</code> and <code class="language-text">block-size</code> allows query upon container's <code class="language-text">width</code> and <code class="language-text">height</code> respectively.</p>
+<h3>Container Style Query</h3>
+<p>The second type is called container style query. This type opens up the possibility to query a container based on its single, specific property.</p>
+<h3>Container State Query</h3>
+<p>The third type, container state query establishes the container to enable query against the "current state" of the container such as whether a <code class="language-text">position: sticky</code> container is "stuck" or that it is currently visible on screen.</p>
+<p>Most likely, you would only need size query under normal circumstances but I'm not here to judge 😅. Besides, these are still drafts and might expect **changes in the future. But it does give us a glimpse of what's possible with container query.</p>
+<h2>Conclusion</h2>
+<p>The idea of responsive design is fantastic — a user interface so versatile that no matter what device you're on, it always looks elegant and flawless. And thus far, this idea has been <strong>mostly</strong> achievable with the current state of technology.</p>
+<p>I said mostly because there are some cases that just couldn't be solved with media query alone. Often time many smaller tweaks need to be made in order to fit components gracefully into complex layouts. And these are some of the problems container query intend to address.</p></div></div></main><footer class="mLayout-footer"><p class="mLayout-footerCredit">Designed &amp; Built by Frendy Guo</p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-162139722-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/css-container-query/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-2966d4d8fea208fd6f8f.js"],"app":["/app-c1fd813b1bddfad27b4b.js"],"component---src-pages-404-js":["/component---src-pages-404-js-6dff525f7fbddb031481.js"],"component---src-pages-about-js":["/component---src-pages-about-js-eb3965b51cc7c865f70a.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-5bd855d3e571a1213316.js"],"component---src-pages-index-js":["/component---src-pages-index-js-76b881f4530139d07894.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-0986093f5936688b470e.js"]};/*]]>*/</script><script src="/polyfill-2966d4d8fea208fd6f8f.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-0986093f5936688b470e.js" async=""></script><script src="/commons-80983d8e1774978fa56f.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-c1fd813b1bddfad27b4b.js" async=""></script><script src="/framework-741ade27086b2708e961.js" async=""></script><script src="/webpack-runtime-22a12fbf2a0c9aa4e195.js" async=""></script></body></html>
