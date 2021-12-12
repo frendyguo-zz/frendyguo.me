@@ -18,7 +18,7 @@ const AboutPage = () => {
                 </span>
               </h1>
               <p className="mAboutPage-descriptionSectionParagraph">
-                Hi <span role="img" aria-label="Waving emoji">👋</span>, I'm Frendy, a frontend software engineer based in Jakarta, Indonesia, with 4 years of experience. I enjoy building stuff and make it live. I break down complex problems into smaller, manageable pieces and turn them into a minimalistic interface with an intuitive experience.
+                Hi <span role="img" aria-label="Waving emoji">👋</span>, I'm Frendy, a frontend software engineer based in Jakarta, Indonesia, with 5 years of experience. I enjoy building stuff and make it live. I break down complex problems into smaller, manageable pieces and turn them into a minimalistic interface with an intuitive experience.
               </p>
               <p className="mAboutPage-descriptionSectionParagraph">
                 I also enjoy reading. I make it one of my priorities in life. The insights and perspective the book gave me have inspired me to take more challenges and grow as a person.
@@ -48,7 +48,7 @@ const AboutPage = () => {
               <div className="mAboutPage-descriptionSectionExperience">
                 <div className="mAboutPage-descriptionSectionExperienceItem">
                   <div className="mAboutPage-descriptionSectionExperienceItemOrg">
-                    Kurio
+                    Pinhome
                   </div>
                   <div className="mAboutPage-descriptionSectionExperienceItemInfo">
                     <div className="mAboutPage-descriptionSectionExperienceItemInfoRole">Senior Frontend Engineer <span>@ Pinhome</span></div>
