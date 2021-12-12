@@ -76,7 +76,7 @@ To target the container, we use `@container` to specify the rule to target the n
 @container my-component (min-width: 700px) {}
 ```
 
-This is very exciting because the child element can be made aware of its surroundings and can decide for itself how to react.!
+This is very exciting because the child element can be made aware of its surroundings and can decide for itself how to react.
 
 ## A Highly Modular Component
 
