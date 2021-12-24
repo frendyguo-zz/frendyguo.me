@@ -33,7 +33,7 @@ const Layout = ({
       {
         withFooter && (
           <footer className="mLayout-footer">
-            <p className="mLayout-footerCredit">Designed & Built by Frendy Guo</p>
+            <p className="mLayout-footerCredit">&copy; {new Date().getFullYear()} Frendy Guo</p>
           </footer>
         )
       }

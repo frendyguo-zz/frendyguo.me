@@ -36,7 +36,7 @@ const BlogPostTemplate = ({ data }) => {
                   <Img
                     fluid={featuredImgFluid}
                     style={{
-                      maxHeight: 480,
+                      maxHeight: 400,
                     }}
                   />
                 </div>

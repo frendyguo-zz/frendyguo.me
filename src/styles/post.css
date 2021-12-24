@@ -4,10 +4,6 @@
   max-width: 640px;
 }
 
-.mPostPage-fm {
-  padding: 20px 0 0;
-}
-
 .mPostPage-fmCover {
   margin: 16px 0 0;
 }
@@ -54,7 +50,7 @@
 
 @media screen and (min-width: 768px) {
   .mPostPage-fm {
-    padding-top: 64px;
+    padding-top: 24px;
   }
 
   .mPostPage-fmInfo {
@@ -72,6 +68,8 @@
     margin-top: 20px;
     margin-left: -32px;
     margin-right: -32px;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .mPostPage-content {

@@ -1,15 +1,15 @@
 .mHomePage {
-  padding: 32px 20px 48px;
+  padding: 0 20px 48px;
   margin: 0 auto;
   max-width: 640px;
 }
 
 .mHomePage-separator {
-  margin-top: 24px;
-  width: 120px;
+  margin: 32px 0;
+  width: 32.5%;
   height: 1px;
-  background-color: #DFDFDF;
-  margin: 32px 0 0 0;
+  background-color: #111827;
+  margin-left: 0;
 }
 
 .mHomePage-blog {
@@ -17,7 +17,7 @@
 }
 
 .mHomePage-blogPost {
-  margin-top: 80px;
+  margin-top: 64px;
 }
 
 .mHomePage-blogPost:first-child {
@@ -43,6 +43,7 @@
 }
 
 .mHomePage-blogPostTitle {
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 24px;
   line-height: 31px;
   color: #222222;
@@ -55,6 +56,7 @@
 }
 
 .mHomePage-blogPostExcerpt {
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
   color: rgba(0, 0, 0, .75);
   margin: 4px 0 0;
   font-size: 16px;
@@ -68,7 +70,7 @@
 
 @media screen and (min-width: 768px) {
   .mHomePage {
-    padding-top: 64px;
+    padding-top: 32px;
     padding-left: 0;
     padding-right: 0;
   }

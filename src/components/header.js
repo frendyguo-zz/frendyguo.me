@@ -8,18 +8,6 @@ const Header = ({ siteTitle }) => (
   <header className="mHeader">
     <div className="mHeader-wrapper">
       <Brand />
-      <div className="mHeader-menu">
-        <Link
-          to="/about"
-          className="mHeader-menuLink">
-            → About
-        </Link>
-        <Link
-          to="/contact"
-          className="mHeader-menuLink">
-            → Contact
-        </Link>
-      </div>
     </div>
   </header>
 )
