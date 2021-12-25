@@ -8,23 +8,21 @@
 /static/babc7590673906526aed73b7719c1628/f422e/stones.jpg 640w,
 /static/babc7590673906526aed73b7719c1628/a6352/stones.jpg 960w,
 /static/babc7590673906526aed73b7719c1628/ec6c5/stones.jpg 1280w,
-/static/babc7590673906526aed73b7719c1628/c361f/stones.jpg 4256w" src="/static/babc7590673906526aed73b7719c1628/f422e/stones.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div></div><div class="mPostPage-content"><p>No doubt testing is one of the most important parts of software development. Many tools have been developed to make the process of testing easier. But often time engineers are reluctant to write test because of two reasons, brittle and slow tests.</p>
+/static/babc7590673906526aed73b7719c1628/c361f/stones.jpg 4256w" src="/static/babc7590673906526aed73b7719c1628/f422e/stones.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div></div></div><div class="mPostPage-content"><p>No doubt testing is one of the most important parts of software development. Many tools have been developed to make the process of testing easier. But often time engineers are reluctant to write test because of two reasons, <strong>brittle and slow tests</strong>.</p>
 <p>Test is considered brittle if it fails due to unrelated change that does not introduce any bugs on production codes. This can happen if the test is validating implementation details rather than the public APIs.</p>
 <p>On the other hand, slow test can be due to many reasons. Maybe the test is performing an HTTP request that adds up the latency, maybe the test has to simulate delays in order to satisfy certain conditions, and so and so. Few of these are fine, but imagine hundreds of test cases with each adding a few seconds to the runtime, the test will likely take hours to finish. </p>
-<p>In such cases, test doubles can be handy.</p>
+<p>In such cases, <strong>test doubles</strong> can be handy.</p>
 <h2>Test Doubles</h2>
 <p>If the term test double feels rather strange to you, that's because we have been mostly using the word "mock" to refer to the whole family of objects that are used in test.</p>
 <p>Just like how a stunt double stands in for an actor in order to perform physically demanding stuffs, test double is used as a substitute for the real implementation. A test double is simply a stand-in object or function that behaves similarly to that of a real implementation. It is an ideal choice when using the real production service is simply not feasible. </p>
 <p>Can you imagine the incurred cost of having to actually proceed with payment on credit-card payment service every time we run a test case?</p>
 <p>There's a short blog post titled <a href="https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html" target="_blank" rel="nofollow noopener noreferrer">The Little Mocker</a> written by Robert Martin (also known as Uncle Bob) that hilariously explains the relationship between various kinds of test double.</p>
-<p>In short, test doubles are comprised of dummies, fakes, stubs, spies, and mocks. Each enables a different style of testing, and their relationships look like this.</p>
-<!-- Todo: Illustration of relationship -->
+<p>In short, test doubles are comprised of dummies, fakes, stubs, spies, and mocks. Each enables a different style of testing.</p>
 <p>Out of these, Dummy objects have no real behavior, they're only passed around to fulfill parameter lists, while the rest work a bit differently. It is particularly helpful for engineers to understand how each technique work and what are the downsides of it.</p>
 <h3>Fakes</h3>
 <p>First, we have fakes, a lightweight version of an API, object, or function. Fakes behave similarly to real objects, they have business behavior but usually take some shortcuts in order to simplify. </p>
 <p>An example of this would be an in-memory database that stands in for real database.</p>
 <p>Fakes can be constructed without help from mocking frameworks such as <a href="https://jestjs.io/" target="_blank" rel="nofollow noopener noreferrer">Jest</a> or <a href="https://sinonjs.org/" target="_blank" rel="nofollow noopener noreferrer">Sinon</a>. An example of a fake object in Typescript,</p>
-<!-- Todo: Fake object -->
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">interface</span> <span class="token class-name">Payload</span> <span class="token punctuation">{</span>
   username<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
   password<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
