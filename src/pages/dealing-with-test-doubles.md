@@ -5,13 +5,13 @@ featuredImage: '../images/test_doubles/stones.jpg'
 shortDesc: "Learn the differences of various test doubles"
 ---
 
-No doubt testing is one of the most important parts of software development. Many tools have been developed to make the process of testing easier. But often time engineers are reluctant to write test because of two reasons, brittle and slow tests.
+No doubt testing is one of the most important parts of software development. Many tools have been developed to make the process of testing easier. But often time engineers are reluctant to write test because of two reasons, **brittle and slow tests**.
 
 Test is considered brittle if it fails due to unrelated change that does not introduce any bugs on production codes. This can happen if the test is validating implementation details rather than the public APIs.
 
 On the other hand, slow test can be due to many reasons. Maybe the test is performing an HTTP request that adds up the latency, maybe the test has to simulate delays in order to satisfy certain conditions, and so and so. Few of these are fine, but imagine hundreds of test cases with each adding a few seconds to the runtime, the test will likely take hours to finish. 
 
-In such cases, test doubles can be handy.
+In such cases, **test doubles** can be handy.
 
 ## Test Doubles
 If the term test double feels rather strange to you, that's because we have been mostly using the word "mock" to refer to the whole family of objects that are used in test.
@@ -22,9 +22,7 @@ Can you imagine the incurred cost of having to actually proceed with payment on 
 
 There's a short blog post titled [The Little Mocker](https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html) written by Robert Martin (also known as Uncle Bob) that hilariously explains the relationship between various kinds of test double.
 
-In short, test doubles are comprised of dummies, fakes, stubs, spies, and mocks. Each enables a different style of testing, and their relationships look like this.
-
-<!-- Todo: Illustration of relationship -->
+In short, test doubles are comprised of dummies, fakes, stubs, spies, and mocks. Each enables a different style of testing.
 
 Out of these, Dummy objects have no real behavior, they're only passed around to fulfill parameter lists, while the rest work a bit differently. It is particularly helpful for engineers to understand how each technique work and what are the downsides of it.
 
@@ -35,7 +33,6 @@ An example of this would be an in-memory database that stands in for real databa
 
 Fakes can be constructed without help from mocking frameworks such as [Jest](https://jestjs.io/) or [Sinon](https://sinonjs.org/). An example of a fake object in Typescript,
 
-<!-- Todo: Fake object -->
 ```ts
 interface Payload {
   username: string;
