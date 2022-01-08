@@ -82,7 +82,7 @@
   foo<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
   bar<span class="token operator">:</span> <span class="token string">''</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p>Perfect! Our function returns exactly the shape we asked for no more and no less. Note that the empty string <code class="language-text">&#39;&#39;</code> is simply a placeholder value to fulfill the object shape, it doesn't actually do anything (we can customize it though).</p>
+<p>Perfect! Our function returns exactly the shape we asked for, no more and no less. Note that the empty string <code class="language-text">&#39;&#39;</code> is simply a placeholder value to fulfill the object shape, it doesn't actually do anything (we can customize it though).</p>
 <p>Alternatively, if you dislike the fact that we use an object to define the shape, we can also do it like this,</p>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">type</span> <span class="token class-name">StuffRequest</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> CustomType<span class="token punctuation">;</span>
 <span class="token keyword">type</span> <span class="token class-name">StuffResponse<span class="token operator">&lt;</span><span class="token constant">T</span> <span class="token keyword">extends</span> StuffRequest<span class="token operator">></span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
