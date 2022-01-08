@@ -117,7 +117,7 @@ const {
 });
 ```
 
-Perfect! Our function returns exactly the shape we asked for no more and no less. Note that the empty string `''` is simply a placeholder value to fulfill the object shape, it doesn't actually do anything (we can customize it though).
+Perfect! Our function returns exactly the shape we asked for, no more and no less. Note that the empty string `''` is simply a placeholder value to fulfill the object shape, it doesn't actually do anything (we can customize it though).
 
 Alternatively, if you dislike the fact that we use an object to define the shape, we can also do it like this,
 
