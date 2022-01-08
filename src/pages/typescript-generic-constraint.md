@@ -1,7 +1,7 @@
 ---
 title: "Narrow Down Types With Typescript Generic Constraints"
 date: '2022-01-08'
-featuredImage: '../images/generic_constraints/generic_constraint.jpg'
+featuredImage: '../images/generic_constraints/generic_constraints.jpg'
 shortDesc: "How to unleash the real power of Typescript generics"
 ---
 
@@ -47,7 +47,7 @@ You'll notice that `null` and `undefined` are allowed here, it might be what we 
 ```ts
 function getStuff<T extends {}>(arg: T) {}
 
-getStuff('asdsad'); ✅
+getStuff("Hitchhiker's Guide to the Galaxy"); ✅
 getStuff(42); ✅
 getStuff({}); ✅
 getStuff([]); ✅
@@ -69,7 +69,7 @@ function getLength<T extends Lengthwise>(arg: T): number {
   return arg.length();
 }
 
-getLength('asdsad'); ✅ // 6
+getLength("Hitchhiker's Guide to the Galaxy"); ✅ // 6
 getLength(42); ❌
 getLength({}); ❌
 getLength([]); ✅ // 0
